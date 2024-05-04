@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clock {
+  margin: 20px auto;
+  border: 10px solid rgb(0, 72, 255);
+  border-radius: 50%;
+  width: 40vw;
+  height: 40vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(11, 11, 144, 0.2);
+}
+
+.clock #center_dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(1, 1, 18);
+  z-index: 1;
+}
+
+.num
+{
+  font-size: 45px;
+  font-weight: bold;
+  position: absolute;
+}
+
+#num1,
+#num2,
+#num4,
+#num5,
+#num7,
+#num8,
+#num10,
+#num11 {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#num1 {
+  top: 60px;
+  right: 140px;
+}
+#num11 {
+  top: 60px;
+  left: 140px;
+}
+#num2 {
+  top: 140px;
+  right: 60px;
+}
+#num10 {
+  top: 140px;
+  left: 60px;
+}
+#num3 {
+  top: 240px;
+  right: 20px;
+}
+#num9 {
+  top: 240px;
+  left: 20px;
+}
+#num4 {
+  top: 370px;
+  right: 60px;
+}
+#num8 {
+  top: 370px;
+  left: 60px;
+}
+#num5 {
+  top: 460px;
+  right: 140px;
+}
+#num7 {
+  top: 460px;
+  left: 140px;
+}
+#num6 {
+  bottom: 9px;
+  left: 255px;
+}
+#num12 {
+  top: 9px;
+  left: 245px;
+}
+
+#brandName {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: blue;
+  top: 80px;
+}
+
+/*  */
+.arrow_section {
+  height: 480px;
+  width: 480px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#hourArrow,
+#minArrow,
+#secArrow {
+  position: absolute;
+  transform-origin: bottom center;
+  border-radius: 7px 7px 0px 0px;
+}
+
+#hourArrow {
+  height: 160px;
+  width: 13px;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -7px;
+  background-color: black;
+}
+#minArrow {
+  height: 210px;
+  width: 8px;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -3px;
+  background-color: black;
+}
+#secArrow {
+  height: 218px;
+  width: 4px;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -2px;
+  background-color: red;
+}
